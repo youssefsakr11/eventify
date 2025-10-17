@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Your Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <a href="index.html" class="eb-logo">
+                <img src="logo/logo.png" alt="Eventify logo" class="logo-img">
+                <div>
+                   
+                </div>
+            </a>
+            <nav>
+                <a href="index.html" class="btn">Home</a>
+                <a href="dashboard.html" class="btn">Dashboard</a>
+                <a href="events.html" class="btn">Events</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h1>Your Ticket</h1>
+                <p class="muted">Present this ticket at the event entrance</p>
+
+                <!-- Ticket Design -->
+                <div class="card" style="border: 2px solid var(--accent); padding: 30px; text-align: center;">
+                    <div class="row" style="justify-content: space-between; align-items: center;">
+                        <div>
+                            <div class="mark">E</div>
+                        </div>
+                        <div>
+                            <h2 style="margin: 0;">Eventify</h2>
+                            <div class="muted">Digital Ticket</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="tag">General Admission</div>
+                        </div>
+                    </div>
+
+                    <div style="margin: 30px 0;">
+                        <h1 style="margin: 0;">Indie Music Night</h1>
+                        <p class="muted">The Loft • Downtown</p>
+                    </div>
+
+                    <div class="row" style="justify-content: space-around; margin: 20px 0;">
+                        <div style="text-align: center;">
+                            <div class="muted">Date</div>
+                            <strong>Nov 10, 2024</strong>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="muted">Time</div>
+                            <strong>7:00 PM</strong>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="muted">Ticket #</div>
+                            <strong>EVT-001-001</strong>
+                        </div>
+                    </div>
+
+                    <!-- QR Code Placeholder -->
+                    <div style="background: #f0f0f0; padding: 20px; border-radius: 10px; margin: 20px auto; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: #333; text-align: center;">
+                            <div>QR CODE</div>
+                            <div style="font-size: 12px;">(Scanner Placeholder)</div>
+                        </div>
+                    </div>
+
+                    <div class="muted" style="font-size: 12px;">
+                        Ticket Holder: John Doe • Order #EVT-001
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: center; margin-top: 30px;">
+                    <button class="btn primary" onclick="window.print()">Print Ticket</button>
+                    <button class="btn">Save as PDF</button>
+                    <a href="dashboard.html" class="btn">Back to Dashboard</a>
+                </div>
+
+                <div style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                    <p class="muted" style="font-size: 12px;">
+                        📱 <strong>Mobile Entry:</strong> Show this ticket on your phone at the entrance.<br>
+                        🎫 <strong>Transfer:</strong> This ticket is transferable until 24 hours before the event.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Eventify &copy; 2024 - Your Ticket
+        </footer>
+    </div>
+</body>
+</html>

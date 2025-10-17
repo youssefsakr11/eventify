@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - My Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <a href="index.html" class="eb-logo">
+                <img src="logo/logo.png" alt="Eventify logo" class="logo-img">
+            </a>
+            <nav>
+                <a href="index.html" class="btn">Home</a>
+                <a href="events.html" class="btn">Events</a>
+                <a href="dashboard.html" class="btn">Dashboard</a>
+                <a href="login.html" class="btn">Logout</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="dash">
+                <aside class="sidenav card">
+                    <a class="active">My Tickets</a>
+                    <a>My Orders</a>
+                    <a>Profile Settings</a>
+                    <a href="events.html">Browse Events</a>
+                    <a href="login.html">Logout</a>
+                </aside>
+
+                <div>
+                    <div class="card">
+                        <h2>My Tickets</h2>
+                        <p class="muted">Your upcoming events and tickets</p>
+                        
+                        <div class="card" style="margin-top: 20px;">
+                            <div class="row" style="justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h3>Indie Music Night</h3>
+                                    <p class="muted">The Loft • Nov 10, 2024 • 7:00 PM</p>
+                                    <div class="tag">Confirmed</div>
+                                </div>
+                                <div class="row">
+                                    <a href="ticket.html" class="btn">View Ticket</a>
+                                    <a href="ticket.html" class="btn primary">Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-top: 15px;">
+                            <div class="row" style="justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h3>Tech Startup Meetup</h3>
+                                    <p class="muted">Hub 9 • Nov 22, 2024 • 6:30 PM</p>
+                                    <div class="tag">Confirmed</div>
+                                </div>
+                                <div class="row">
+                                    <a href="ticket.html" class="btn">View Ticket</a>
+                                    <a href="ticket.html" class="btn primary">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-top: 20px;">
+                        <h3>Order History</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Event</th>
+                                    <th>Date</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#EVT-001</td>
+                                    <td>Indie Music Night</td>
+                                    <td>Nov 5, 2024</td>
+                                    <td>$25.00</td>
+                                    <td><span class="tag">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#EVT-002</td>
+                                    <td>Tech Startup Meetup</td>
+                                    <td>Nov 3, 2024</td>
+                                    <td>$0.00</td>
+                                    <td><span class="tag">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Eventify &copy; 2024 - Event Ticketing System
+        </footer>
+    </div>
+</body>
+</html>
