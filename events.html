@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - All Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <a href="index.html" class="eb-logo">
+                <img src="logo/logo.png" alt="Eventify logo" class="logo-img">
+            </a>
+            <div class="header-search">
+                <input type="search" placeholder="Search events...">
+            </div>
+            <a href="ticket.html" class="cart-btn" style="margin-right:10px;position:relative;display:flex;align-items:center;">
+                <img src="logo/cart.svg" alt="Cart" style="width:32px;height:32px;">
+                <span class="cart-count" style="position:absolute;top:0;right:0;background:#4A7C3A;color:#fff;border-radius:50%;font-size:12px;padding:2px 6px;min-width:20px;text-align:center;">0</span>
+            </a>
+            <nav>
+                <a href="index.html" class="btn">Home</a>
+                <a href="events.html" class="btn">Events</a>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn primary">Register</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h1>All Events</h1>
+                <div class="row">
+                    <div class="pill">All Categories</div>
+                    <div class="pill">Music</div>
+                    <div class="pill">Tech</div>
+                    <div class="pill">Sports</div>
+                </div>
+            </section>
+
+            <div class="grid">
+                <!-- Repeat event cards from homepage -->
+                <div class="card">
+                    <div class="thumb">
+                        <div class="tag">Music</div>
+                    </div>
+                    <h3>Indie Music Night</h3>
+                    <p class="muted">The Loft • Nov 10, 2024</p>
+                    <div class="row" style="justify-content: space-between;">
+                        <span>$25</span>
+                        <a href="event-details.html" class="btn primary">Details</a>
+                    </div>
+                </div>
+                <!-- Add more events as needed -->
+            </div>
+        </main>
+
+        <footer>
+            Eventify &copy; 2024 - Event Ticketing System
+        </footer>
+    </div>
+</body>
+</html>
